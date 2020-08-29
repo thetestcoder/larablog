@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/larablog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larablog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +153,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -184,6 +188,9 @@
       <workItem from="1598503192914" duration="635000" />
       <workItem from="1598528133528" duration="27000" />
       <workItem from="1598581128466" duration="1649000" />
+      <workItem from="1598583798973" duration="77000" />
+      <workItem from="1598593955623" duration="48000" />
+      <workItem from="1598669359445" duration="2807000" />
     </task>
     <servers />
   </component>
@@ -210,6 +217,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1598528153608" />
+    <state x="517" y="283" key="NewPhpFileDialog" timestamp="1598671222929">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="283" key="NewPhpFileDialog/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1598671222929" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1598581906950">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

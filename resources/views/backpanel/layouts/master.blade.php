@@ -21,7 +21,7 @@
         @include('backpanel.layouts.topbar')
         <div class="content">
             <div class="container-fluid">
-                <!-- your content here -->
+                @yield('content')
             </div>
         </div>
 
