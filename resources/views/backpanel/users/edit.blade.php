@@ -3,9 +3,10 @@
     <div class="d-flex justify-content-between">
         <a href="{{route('user.index')}}" class="btn btn-primary rounded">All Users</a>
     </div>
-    <h3 class="text-center">Create A New User</h3>
-    <form action="{{route('user.store')}}" method="post">
+    <h3 class="text-center">Update {{$user->name}}</h3>
+    <form action="{{route('user.update', [$user->id])}}" method="post">
         @csrf
+        @method('PUT')
         <div class="form-group">
             <label for="name">Name</label>
             <input
@@ -13,7 +14,9 @@
                 type="text"
                 class="form-control"
                 name="name"
-                placeholder="Enter User Name">
+                placeholder="Enter User Name"
+                value="{{$user->name}}"
+            >
         </div>
         <div class="form-group">
             <label for="email">Email</label>
@@ -22,19 +25,12 @@
                 type="email"
                 class="form-control"
                 name="email"
-                placeholder="Enter User Email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input
-                id="password"
-                type="text"
-                class="form-control"
-                name="password"
-                placeholder="Enter User Password">
+                placeholder="Enter User Email"
+                value="{{$user->email}}"
+            >
         </div>
         <button
             class="btn btn-primary btn-block rounded"
-            type="submit">Save User</button>
+            type="submit">Update User</button>
     </form>
 @endsection

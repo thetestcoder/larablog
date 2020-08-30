@@ -1,5 +1,10 @@
 @extends('backpanel.layouts.master')
 @section('content')
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{session('success')}}
+        </div>
+    @endif
     <div class="d-flex justify-content-between">
         <a href="{{route('user.create')}}" class="btn btn-primary rounded">Create User</a>
     </div>
@@ -17,14 +22,19 @@
                 <td>{{$user->email}}</td>
                 <td>Admin</td>
                 <td>
-                    <a href="#" class="btn btn-warning btn-sm rounded">
+                    <a href="{{route('user.edit', [$user->id])}}" class="btn btn-warning btn-sm rounded">
                         <i class="material-icons">edit</i>
                         Edit
                     </a>
-                    <a href="#" class="btn btn-danger btn-sm rounded">
-                        <i class="material-icons">delete</i>
-                        Delete
-                    </a>
+                    <form action="{{route('user.destroy', [$user->id])}}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-sm rounded">
+                            <i class="material-icons">delete</i>
+                            Delete
+                        </button>
+                    </form>
+
                 </td>
             </tr>
         @empty
