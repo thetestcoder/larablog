@@ -24,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/users/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/users/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
@@ -162,6 +163,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -194,7 +196,9 @@
       <workItem from="1598669359445" duration="2807000" />
       <workItem from="1598675639319" duration="128000" />
       <workItem from="1598683995539" duration="82000" />
-      <workItem from="1598751701820" duration="2654000" />
+      <workItem from="1598751701820" duration="2995000" />
+      <workItem from="1598769514591" duration="31000" />
+      <workItem from="1598839071668" duration="2353000" />
     </task>
     <servers />
   </component>

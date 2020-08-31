@@ -20,7 +20,7 @@
             <tr>
                 <td>{{$user->name}}</td>
                 <td>{{$user->email}}</td>
-                <td>Admin</td>
+                <td>{{strtoupper($user->roles[0]->name)}}</td>
                 <td>
                     <a href="{{route('user.edit', [$user->id])}}" class="btn btn-warning btn-sm rounded">
                         <i class="material-icons">edit</i>

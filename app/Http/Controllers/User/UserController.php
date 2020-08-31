@@ -5,9 +5,15 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
+    public $roles;
+    public function __construct()
+    {
+        $this->roles = Role::all();
+    }
     public function index()
     {
         $users = User::all();
@@ -16,21 +22,24 @@ class UserController extends Controller
 
     public function create()
     {
-        return view('backpanel.users.create');
+        return view('backpanel.users.create')->with('roles', $this->roles);
     }
 
     public function store(Request $request)
     {
        $user = User::create($request->all());
-        return $this->redirectUser($user->name." Added Successfully");
+       $user->assignRole($request->role_id);
+       return $this->redirectUser($user->name." Added Successfully");
     }
 
     public function edit(User $user){
-        return view('backpanel.users.edit', compact('user'));
+        return view('backpanel.users.edit', compact('user'))
+            ->with('roles', $this->roles);
     }
 
     public function update(Request $request, User $user){
         $user->update($request->all());
+        $user->syncRoles([$request->role_id]);
         return $this->redirectUser($user->name." Updated Successfully");
     }
 

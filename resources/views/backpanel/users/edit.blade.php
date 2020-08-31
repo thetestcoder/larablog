@@ -29,6 +29,16 @@
                 value="{{$user->email}}"
             >
         </div>
+        <div class="form-group">
+            <label for="roles">Roles</label>
+            <select id="roles" name="role_id" class="form-control">
+                @foreach($roles as $role)
+                    <option value="{{$role->id}}" @if($role->id === $user->role_id) selected @endif >{{strtoupper
+                    ($role->name)
+                    }}</option>
+                @endforeach
+            </select>
+        </div>
         <button
             class="btn btn-primary btn-block rounded"
             type="submit">Update User</button>
