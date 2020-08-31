@@ -4,7 +4,8 @@
         <a href="{{route('user.index')}}" class="btn btn-primary rounded">All Users</a>
     </div>
     <h3 class="text-center">Create A New User</h3>
-    <form action="{{route('user.store')}}" method="post">
+    @include('backpanel.layouts.errors')
+    <form action="{{route('user.store')}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="name">Name</label>
@@ -13,7 +14,8 @@
                 type="text"
                 class="form-control"
                 name="name"
-                placeholder="Enter User Name">
+                placeholder="Enter User Name"
+            >
         </div>
         <div class="form-group">
             <label for="email">Email</label>
@@ -41,6 +43,10 @@
                 @endforeach
             </select>
         </div>
+
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" id="avatar">
+
         <button
             class="btn btn-primary btn-block rounded"
             type="submit">Save User</button>

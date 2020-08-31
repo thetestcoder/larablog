@@ -4,6 +4,7 @@
         <a href="{{route('user.index')}}" class="btn btn-primary rounded">All Users</a>
     </div>
     <h3 class="text-center">Update {{$user->name}}</h3>
+    @include('backpanel.layouts.errors')
     <form action="{{route('user.update', [$user->id])}}" method="post">
         @csrf
         @method('PUT')

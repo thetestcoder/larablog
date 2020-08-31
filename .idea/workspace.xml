@@ -20,13 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/larablog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larablog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/users/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/users/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +145,14 @@
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/league/glide" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-medialibrary" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gcRLrOyquS5AzpEr414nI9ET1g" />
@@ -198,7 +209,7 @@
       <workItem from="1598683995539" duration="82000" />
       <workItem from="1598751701820" duration="2995000" />
       <workItem from="1598769514591" duration="31000" />
-      <workItem from="1598839071668" duration="2353000" />
+      <workItem from="1598839071668" duration="5573000" />
     </task>
     <servers />
   </component>

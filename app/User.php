@@ -5,11 +5,13 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable
+class User extends Authenticatable implements HasMedia
 {
-    use Notifiable, HasRoles;
+    use Notifiable, HasRoles, InteractsWithMedia;
 
     /**
      * The attributes that are mass assignable.
@@ -38,7 +40,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    protected $appends = ['role_id'];
+    protected $appends = ['role_id', 'avatar'];
 
     //mutators
 
@@ -50,5 +52,16 @@ class User extends Authenticatable
     public function getRoleIdAttribute()
     {
         return $this->roles[0]->id;
+    }
+
+    public function getAvatarAttribute()
+    {
+        return $this->getMedia('user_avatar')->first()->getUrl();
+    }
+
+    //media method
+    public function clearMediaCollection(string $collectionName = 'default'): HasMedia
+    {
+        //
     }
 }
