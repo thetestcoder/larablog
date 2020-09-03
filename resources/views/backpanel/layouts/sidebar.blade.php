@@ -16,6 +16,12 @@
                 </a>
             </li>
             <li class="nav-item ">
+                <a class="nav-link" href="{{route('permission.index')}}">
+                    <i class="material-icons">work</i>
+                    <p>Permissions</p>
+                </a>
+            </li>
+            <li class="nav-item ">
                 <a class="nav-link" href="{{route('role.index')}}">
                     <i class="material-icons">group_work</i>
                     <p>Roles</p>
