@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/roles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/roles/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +213,9 @@
       <workItem from="1598863443517" duration="34000" />
       <workItem from="1598927705956" duration="2024000" />
       <workItem from="1598970099889" duration="16000" />
-      <workItem from="1599102913237" duration="1232000" />
+      <workItem from="1599102913237" duration="1446000" />
+      <workItem from="1599134064218" duration="22000" />
+      <workItem from="1599272917971" duration="2441000" />
     </task>
     <servers />
   </component>
@@ -235,6 +238,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1599275240230">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1599275240230" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598528153608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

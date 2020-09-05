@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Role\AssignPermssion;
 use App\Http\Requests\Role\RoleRequest;
+use Illuminate\Http\Request;
+use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
 class RoleController extends Controller
@@ -96,5 +99,29 @@ class RoleController extends Controller
         return redirect()
             ->route('role.index')
             ->with('success', "Role Deleted Successfully");
+    }
+
+    /**
+     * @param Role $role
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function assignPermissionView(Role $role)
+    {
+        $permissions= Permission::all();
+        return view(
+            'backpanel.roles.assign-permission',
+            compact(['role', 'permissions'])
+        );
+    }
+
+    /**
+     * @param AssignPermssion $request
+     * @param Role $role
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function assignPermission(AssignPermssion $request, Role $role)
+    {
+        $role->syncPermissions($request->permission);
+        return back()->with('success', "Permission Added Successfully");
     }
 }
