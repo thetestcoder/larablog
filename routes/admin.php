@@ -21,3 +21,12 @@ Route::resource('/backpanel/role', 'User\RoleController');
 //permission routes
 Route::resource('/backpanel/permission', 'User\PermissionController');
 
+//category Route
+Route::get('/backpanel/category/trashed', 'User\CategoryController@trashedCategory')
+    ->name('category.trash');
+Route::post('/backpanel/category/{category}/restore', 'User\CategoryController@restoreCategory')
+    ->name('category.restore');
+Route::delete('/backpanel/category/{category}/force-delete', 'User\CategoryController@forceDeleteCategory')
+    ->name('category.force.delete');
+Route::resource('/backpanel/category', 'User\CategoryController');
+

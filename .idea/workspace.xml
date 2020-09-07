@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/larablog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larablog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/roles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/roles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,6 +150,7 @@
       <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
       <path value="$PROJECT_DIR$/vendor/spatie/temporary-directory" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-medialibrary" />
+      <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gcRLrOyquS5AzpEr414nI9ET1g" />
@@ -160,7 +164,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backpanel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backpanel/categories" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -172,12 +176,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\resources\views\backpanel\categories" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel\roles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -216,6 +221,8 @@
       <workItem from="1599102913237" duration="1446000" />
       <workItem from="1599134064218" duration="22000" />
       <workItem from="1599272917971" duration="2441000" />
+      <workItem from="1599278533367" duration="735000" />
+      <workItem from="1599449102576" duration="3938000" />
     </task>
     <servers />
   </component>
@@ -238,10 +245,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1599275240230">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1599451129603">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1599275240230" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1599451129603" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598528153608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

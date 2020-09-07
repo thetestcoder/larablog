@@ -16,6 +16,12 @@
                 </a>
             </li>
             <li class="nav-item ">
+                <a class="nav-link" href="{{route('category.index')}}">
+                    <i class="material-icons">all_inbox</i>
+                    <p>Categories</p>
+                </a>
+            </li>
+            <li class="nav-item ">
                 <a class="nav-link" href="{{route('permission.index')}}">
                     <i class="material-icons">work</i>
                     <p>Permissions</p>
