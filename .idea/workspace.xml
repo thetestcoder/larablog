@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/larablog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larablog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
@@ -164,7 +161,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backpanel/categories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backpanel" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,13 +173,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\larablog\resources\views\backpanel\categories" />
-      <recent name="C:\laragon\www\larablog\resources\views\backpanel" />
-      <recent name="C:\laragon\www\larablog\resources\views\backpanel\roles" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\larablog\public\back-assets\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\resources\views\backpanel" />
+      <recent name="C:\laragon\www\larablog\resources\views\backpanel\categories" />
+      <recent name="C:\laragon\www\larablog\resources\views\backpanel\roles" />
     </key>
   </component>
   <component name="RunManager">
@@ -223,6 +220,13 @@
       <workItem from="1599272917971" duration="2441000" />
       <workItem from="1599278533367" duration="735000" />
       <workItem from="1599449102576" duration="3938000" />
+      <workItem from="1599453085693" duration="144000" />
+      <workItem from="1599456653867" duration="1288000" />
+      <workItem from="1599463067176" duration="8000" />
+      <workItem from="1599620837591" duration="760000" />
+      <workItem from="1599641894793" duration="8000" />
+      <workItem from="1599703873726" duration="2537000" />
+      <workItem from="1600051461496" duration="8655000" />
     </task>
     <servers />
   </component>

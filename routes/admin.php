@@ -30,3 +30,15 @@ Route::delete('/backpanel/category/{category}/force-delete', 'User\CategoryContr
     ->name('category.force.delete');
 Route::resource('/backpanel/category', 'User\CategoryController');
 
+
+
+//post route
+Route::post('/backpanel/post/upload', 'User\PostController@uploadPhoto')->name('post.upload');
+Route::get('/backpanel/post/trashed', 'User\PostController@trashedPost')
+    ->name('post.trash');
+Route::post('/backpanel/post/{post}/restore', 'User\PostController@restorePost')
+    ->name('post.restore');
+Route::delete('/backpanel/post/{post}/force-delete', 'User\PostController@forceDeletePost')
+    ->name('post.force.delete');
+Route::resource('/backpanel/post', 'User\PostController');
+

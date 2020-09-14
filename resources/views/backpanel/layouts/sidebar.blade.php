@@ -16,6 +16,12 @@
                 </a>
             </li>
             <li class="nav-item ">
+                <a class="nav-link" href="{{route('post.index')}}">
+                    <i class="material-icons">article</i>
+                    <p>Posts</p>
+                </a>
+            </li>
+            <li class="nav-item ">
                 <a class="nav-link" href="{{route('category.index')}}">
                     <i class="material-icons">all_inbox</i>
                     <p>Categories</p>
