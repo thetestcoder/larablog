@@ -45,6 +45,23 @@
                 @endforelse
             </select>
         </div>
+        <div class="form-file-group">
+            <input type="file"
+                   style="display: none"
+                   id="file-upload"
+                   onchange="previewFile(this)">
+            <p onclick="document.querySelector('#file-upload').click()">
+                Drag Your File Here or Click in this area to Upload
+            </p>
+        </div>
+        <div id="previewBox" style="display: none">
+            <img src="" id="previewImg" width="500px" class="img-fluid">
+            <i
+                class="material-icons"
+                style="cursor: pointer"
+                onclick="removePreview()"
+            >delete</i>
+        </div>
         <button
             class="btn btn-primary rounded"
             type="submit" value="draft" name="status">Save Post</button>
@@ -54,6 +71,22 @@
     </form>
 @endsection
 
+@section('styles')
+    <style>
+        .form-file-group{
+            width: 500px;
+            height: 200px;
+            border: 4px dashed #000;
+        }
+        .form-file-group p {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 170px;
+        }
+    </style>
+@endsection
+
 @section('scripts')
     <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
     <script>
@@ -61,5 +94,23 @@
             filebrowserUploadUrl:"{{route('post.upload', ['_token'=>csrf_token()])}}",
             filebrowserUploadMethod:"form"
         });
+
+        function previewFile(input){
+            let file = $("input[type=file]").get(0).files[0];
+            if(file){
+                let reader = new FileReader();
+                reader.onload = function (){
+                    $("#previewImg").attr('src', reader.result);
+                    $("#previewBox").css('display', 'block');
+                }
+                $(".form-file-group").css('display', 'none');
+                reader.readAsDataURL(file);
+            }
+        }
+        function removePreview(){
+            $("#previewImg").attr('src',"");
+            $("#previewBox").css('display', 'none');
+            $(".form-file-group").css('display', 'block');
+        }
     </script>
 @endsection

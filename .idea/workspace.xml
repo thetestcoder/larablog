@@ -22,8 +22,7 @@
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/posts/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +172,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\larablog\resources\views\backpanel" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel\categories" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel\roles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -227,6 +226,9 @@
       <workItem from="1599641894793" duration="8000" />
       <workItem from="1599703873726" duration="2537000" />
       <workItem from="1600051461496" duration="8655000" />
+      <workItem from="1600061602266" duration="139000" />
+      <workItem from="1600090354982" duration="9000" />
+      <workItem from="1600222454258" duration="2864000" />
     </task>
     <servers />
   </component>
