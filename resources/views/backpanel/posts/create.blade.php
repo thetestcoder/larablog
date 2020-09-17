@@ -47,6 +47,7 @@
         </div>
         <div class="form-file-group">
             <input type="file"
+                   name="feature_image"
                    style="display: none"
                    id="file-upload"
                    onchange="previewFile(this)">

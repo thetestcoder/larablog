@@ -50,6 +50,11 @@ class PostController extends Controller
             'category_id'   => $request->category_id
         ]);
 
+        if($request->hasFile('feature_image')){
+            $post->addMedia($request->feature_image)
+                ->toMediaCollection("feature_image");
+        }
+
         return redirect()->route('post.index')
             ->with('success', "Post Added Successfully");
     }

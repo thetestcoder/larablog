@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/posts/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,6 +169,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -228,7 +230,9 @@
       <workItem from="1600051461496" duration="8655000" />
       <workItem from="1600061602266" duration="139000" />
       <workItem from="1600090354982" duration="9000" />
-      <workItem from="1600222454258" duration="2864000" />
+      <workItem from="1600222454258" duration="3072000" />
+      <workItem from="1600230719956" duration="15000" />
+      <workItem from="1600313459105" duration="623000" />
     </task>
     <servers />
   </component>
@@ -251,10 +255,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1599451129603">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="486" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1600313966002">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
+    <state x="486" y="65" key="#com.intellij.ide.util.MemberChooser/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1600313966002" />
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1599451129603" />
+    <state x="686" y="114" key="#com.intellij.ide.util.MemberChooser/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600313609682" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598528153608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
