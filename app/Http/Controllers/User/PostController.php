@@ -73,35 +73,54 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param  Post  $post
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        $categories = Category::all();
+        return view('backpanel.posts.edit', compact(['post', 'categories']));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param  Post $post
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Post $post)
     {
-        //
+        $post->update([
+            'title'         => $request->input('title', $post->title),
+            'content'       => $request->input('post_content', $post->content),
+            'status'        => $request->input('status', $post->status),
+            'excerpt'       => $request->input('excerpt', $post->excerpt),
+            'user_id'       => 7,
+            'category_id'   => $request->input('category_id', $post->category_id)
+        ]);
+
+        if($request->hasFile('feature_image')){
+            $post->media()->delete();
+            $post->addMedia($request->feature_image)
+                ->toMediaCollection("feature_image");
+        }
+
+        return redirect()->route('post.index')
+            ->with('success', "Post Updated Successfully");
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param  Post  $post
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy($id)
+    public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect()->route('post.index')
+            ->with('success', "Post Deleted Successfully");
     }
 
     public function trashedPost()

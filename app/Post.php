@@ -18,6 +18,7 @@ class Post extends Model implements HasMedia
         'user_id',
         'category_id'
     ];
+    protected $appends = ['url'];
 
     public function setTitleAttribute($value)
     {
@@ -29,5 +30,12 @@ class Post extends Model implements HasMedia
     public function clearMediaCollection(string $collectionName = 'default'): HasMedia
     {
         // TODO: Implement clearMediaCollection() method.
+    }
+
+    public function getUrlAttribute()
+    {
+        $hasMedia = $this->getMedia('feature_image')->first();
+        return  $hasMedia != null ?
+            $hasMedia->getUrl() : "";
     }
 }
