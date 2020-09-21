@@ -21,10 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/posts/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/posts/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/posts/trash.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +234,9 @@
       <workItem from="1600230719956" duration="15000" />
       <workItem from="1600313459105" duration="1034000" />
       <workItem from="1600323312990" duration="13000" />
-      <workItem from="1600480820232" duration="3990000" />
+      <workItem from="1600480820232" duration="4108000" />
+      <workItem from="1600491551860" duration="7000" />
+      <workItem from="1600653047217" duration="2594000" />
     </task>
     <servers />
   </component>

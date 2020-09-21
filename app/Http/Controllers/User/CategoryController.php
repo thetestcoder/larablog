@@ -103,7 +103,7 @@ class CategoryController extends Controller
     {
         Category::withTrashed()->where('id', $id)->restore();
         return redirect()->route('category.index')
-            ->with('success', "Category Restored");
+        ->with('success', "Category Restored");
     }
 
     public function forceDeleteCategory($id)

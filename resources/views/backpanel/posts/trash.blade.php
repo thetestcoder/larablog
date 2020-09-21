@@ -2,28 +2,28 @@
 @section('content')
     @include('backpanel.layouts.success')
     <div class="d-flex justify-content-between">
-        <a href="{{route('category.create')}}"
+        <a href="{{route('post.create')}}"
            class="btn btn-primary rounded"
-        >Create Category</a>
+        >Create Post</a>
         <a
-            href="{{route('category.trash')}}"
+            href="{{route('post.trash')}}"
             class="btn btn-danger rounded"
         >Trash</a>
     </div>
-    <h2>All Category</h2>
+    <h2>All Trashed Post</h2>
     <table class="table table-hover">
         <tr>
-            <th>Name</th>
+            <th>Title</th>
             <th>Slug</th>
             <th>Actions</th>
         </tr>
-        @forelse($categories as $category)
+        @forelse($posts as $post)
             <tr>
-                <td>{{$category->name}}</td>
-                <td>{{$category->slug}}</td>
+                <td>{{$post->title}}</td>
+                <td>{{$post->slug}}</td>
                 <td class="d-flex">
                    <div>
-                    <form action="{{route('category.restore', [$category->id])}}" method="post">
+                    <form action="{{route('post.restore', [$post->id])}}" method="post">
                         @csrf
                         <button type="submit" class="btn btn-warning btn-sm rounded">
                             <i class="material-icons">restore</i>
@@ -31,7 +31,7 @@
                         </button>
                     </form>
                    </div>
-                    <form action="{{route('category.force.delete', [$category->id])}}" method="post">
+                    <form action="{{route('post.force.delete', [$post->id])}}" method="post">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger btn-sm rounded">
@@ -43,7 +43,7 @@
             </tr>
         @empty
             <tr>
-                <td colspan="4">No Category found</td>
+                <td colspan="4">No Trashed Post found</td>
             </tr>
         @endforelse
     </table>

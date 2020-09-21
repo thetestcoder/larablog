@@ -125,17 +125,26 @@ class PostController extends Controller
 
     public function trashedPost()
     {
-        // TODO: all trashed posts
+        $posts = Post::onlyTrashed()->get();
+        return view('backpanel.posts.trash', compact('posts'));
     }
 
-    public function restorePost($post)
+    public function restorePost($id)
     {
-        // TODO: restore a single post
+        Post::withTrashed()->where('id', $id)->restore();
+        return redirect()
+            ->route('post.index')
+            ->with('success', "Post Restored");
     }
 
-    public function forceDeletePost($post)
+    public function forceDeletePost($id)
     {
-        // TODO: Force delete any single trashed post
+        $post =  Post::withTrashed()->where('id', $id)->first();
+        $post->getMedia('feature_image')[0]->delete();
+        $post->forceDelete();
+        return redirect()
+            ->route('post.index')
+            ->with('success', "Post Deleted successfully");
     }
 
     public function uploadPhoto(Request $request)
