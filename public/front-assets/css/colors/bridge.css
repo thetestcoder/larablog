@@ -1,0 +1,54 @@
+ul.nav.yellow-green > li > a.active {
+    color: #a5d549;
+}
+ul.nav.yellow-green > li > a.active:hover {
+    color: #a5d549;
+}
+.navbar-default.yellow-green .navbar-nav > li > a:focus, .navbar-default.yellow-green .navbar-nav > li > a:hover {
+    color: #a5d549;
+}
+.blog1-post-holder .image-holder .post-info {
+    background-color: #a5d549;
+}
+.btn.btn-border.yellow-green {
+    border-color: #a5d549;
+    color: #a5d549;
+}
+.btn.btn-border.yellow-green:hover {
+    background-color: #a5d549;
+    border-color: #a5d549;
+}
+.blog1-social-icons li a:hover {
+    background-color: #a5d549;
+    border: 1px solid #a5d549;
+}
+.category-links li a:hover, .category-links li a.active {
+    color: #a5d549;
+}
+.blog1-sidebar-posts:hover h6, .blog1-sidebar-posts.active h6 {
+    color: #a5d549;
+}
+.tags li a:hover, .tags li a.active {
+    background-color: #a5d549;
+}
+.social-icons-3.yellow-green li a:hover, .social-icons-3.yellow-green li a.active {
+    background-color: #a5d549;
+}
+.section-copyrights.section-white {
+    background-color: #a5d549;
+}
+.scrollup.yellow-green {
+    background-color: #a5d549;
+}
+a.loadmore-but {
+    background-color: #a5d549;
+}
+.smart-forms .btn-primary.yellow-green {
+    background-color: #a5d549;
+}
+.smart-forms .btn-primary.yellow-green:active {
+    background-color: #a5d549;
+}
+.social-icons-3.dark li a:hover, .social-icons-3.dark li a.active {
+    background-color: #a5d549;
+}
