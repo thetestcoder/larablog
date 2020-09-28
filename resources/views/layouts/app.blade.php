@@ -60,7 +60,9 @@
             <div class="navbar yellow-green navbar-default yamm">
                 <div class="navbar-header">
                     <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt=""/></a> </div>
+                    <a href="index.html" class="navbar-brand">
+                        <img src="{{asset('front-assets/images/logo.png')}}" alt=""/>
+                    </a> </div>
                 <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                     <ul class="nav yellow-green navbar-nav">
                         <li> <a href="index.html" class="dropdown-toggle active">Home</a></li>
@@ -82,116 +84,11 @@
     <!--end menu-->
     <div class="clearfix"></div>
 
-    <section>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-md-6">
-                    <div class="blog2-header-box">
-                        <div class="image-holder">
-                            <div class="text-box top-padding"> <a href="#">
-                                    <h1 class="title uppercase dosis">pharetra quis vulputate </h1>
-                                </a> <a href="#">
-                                    <h1 class="title uppercase dosis">pharetra vulputate </h1>
-                                </a>
-                                <div class="post-info"><span><i class="fa fa-user"></i> By John Doe</span> <span><i class="fa fa-clock-o"></i> 20/07/2015</span> <span><i class="fa fa-comment"></i> 15</span> </div>
-                            </div>
-                            <img src="http://placehold.it/1000x650" alt="" class="img-responsive"/> </div>
-                    </div>
-                </div>
-                <!--end item-->
-
-                <div class="col-md-6">
-                    <div class="blog2-header-box">
-                        <div class="image-holder">
-                            <div class="text-box top-padding"> <a href="#">
-                                    <h1 class="title uppercase dosis">pharetra quis vulputate </h1>
-                                </a> <a href="#">
-                                    <h1 class="title uppercase dosis">pharetra vulputate </h1>
-                                </a>
-                                <div class="post-info"><span><i class="fa fa-user"></i> By John Doe</span> <span><i class="fa fa-clock-o"></i> 20/07/2015</span> <span><i class="fa fa-comment"></i> 15</span> </div>
-                            </div>
-                            <img src="http://placehold.it/1000x650" alt="" class="img-responsive"/> </div>
-                    </div>
-                </div>
-                <!--end item-->
-
-            </div>
-        </div>
-    </section>
-    <!--end section-->
-    <div class="clearfix"></div>
-
     <section class="section-light sec-tpadding-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="col-md-12 nopadding">
-                        <div class="blog1-post-holder">
-                            <div class="image-holder">
-                                <div class="post-info"> <span><i class="fa fa-user"></i> Charlotte</span> <span><i class="fa fa-calendar"></i> 26 April , 2015</span> </div>
-                                <img src="http://placehold.it/1200x600" alt="" class="img-responsive"/> </div>
-                            <div class="text-box-inner">
-                                <h4 class="dosis uppercase less-mar3"><a href="#">Aliquam Rhoncus amet Maecenas sed nisl</a></h4>
-                                <div class="blog-post-info"> <span><i class="fa fa-user"></i> By Benjamin</span> <span><i class="fa fa-comments-o"></i> 15 Comments</span> </div>
-                                <br/>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. </p>
-                                <br/>
-                                <br/>
-                                <a href="#" class="btn btn-border yellow-green">Read more</a> </div>
-                        </div>
-                    </div>
-                    <!--end post-->
-
-                    <div class="col-md-12 nopadding">
-                        <div class="blog1-post-holder">
-                            <div class="image-holder">
-                                <div class="post-info"> <span><i class="fa fa-user"></i> Charlotte</span> <span><i class="fa fa-calendar"></i> 26 April , 2015</span> </div>
-                                <img src="http://placehold.it/1200x600" alt="" class="img-responsive"/> </div>
-                            <div class="text-box-inner">
-                                <h4 class="dosis uppercase less-mar3"><a href="#">Aliquam Rhoncus amet Maecenas sed nisl</a></h4>
-                                <div class="blog-post-info"> <span><i class="fa fa-user"></i> By Benjamin</span> <span><i class="fa fa-comments-o"></i> 15 Comments</span> </div>
-                                <br/>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. </p>
-                                <br/>
-                                <br/>
-                                <a href="#" class="btn btn-border yellow-green">Read more</a> </div>
-                        </div>
-                    </div>
-                    <!--end post-->
-
-                    <div class="col-md-12 nopadding">
-                        <div class="blog1-post-holder">
-                            <div class="image-holder">
-                                <div class="post-info"> <span><i class="fa fa-user"></i> Charlotte</span> <span><i class="fa fa-calendar"></i> 26 April , 2015</span> </div>
-                                <img src="http://placehold.it/1200x600" alt="" class="img-responsive"/> </div>
-                            <div class="text-box-inner">
-                                <h4 class="dosis uppercase less-mar3"><a href="#">Aliquam Rhoncus amet Maecenas sed nisl</a></h4>
-                                <div class="blog-post-info"> <span><i class="fa fa-user"></i> By Benjamin</span> <span><i class="fa fa-comments-o"></i> 15 Comments</span> </div>
-                                <br/>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. </p>
-                                <br/>
-                                <br/>
-                                <a href="#" class="btn btn-border yellow-green">Read more</a> </div>
-                        </div>
-                    </div>
-                    <!--end post-->
-
-                    <div class="col-md-12 nopadding">
-                        <div class="blog1-post-holder">
-                            <div class="image-holder">
-                                <div class="post-info"> <span><i class="fa fa-user"></i> Charlotte</span> <span><i class="fa fa-calendar"></i> 26 April , 2015</span> </div>
-                                <img src="http://placehold.it/1200x600" alt="" class="img-responsive"/> </div>
-                            <div class="text-box-inner">
-                                <h4 class="dosis uppercase less-mar3"><a href="#">Aliquam Rhoncus amet Maecenas sed nisl</a></h4>
-                                <div class="blog-post-info"> <span><i class="fa fa-user"></i> By Benjamin</span> <span><i class="fa fa-comments-o"></i> 15 Comments</span> </div>
-                                <br/>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. </p>
-                                <br/>
-                                <br/>
-                                <a href="#" class="btn btn-border yellow-green">Read more</a> </div>
-                        </div>
-                    </div>
-                    <!--end post-->
+                    @yield('content')
 
                 </div>
                 <!--end left item-->
@@ -211,89 +108,8 @@
     <section class="section-dark sec-padding">
         <div class="container ">
             <div class="row">
-                <div class="col-md-4 bmargin clearfix">
-                    <div class="item-holder">
-                        <h4 class="uppercase less-mar3 dosis text-white">Recent Posts</h4>
-                        <div class="footer-title-bottomstrip2"></div>
-                        <div class="clearfix"></div>
-                        <div class="blog1-sidebar-posts">
-                            <div class="image-left"><img src="http://placehold.it/80x80" alt=""/></div>
-                            <div class="text-box-right">
-                                <h6 class="less-mar3 uppercase dosis nopadding text-white"><a href="#">Clean And Modern</a></h6>
-                                <p>Lorem ipsum dolor sit</p>
-                                <div class="blog1-post-info dark"> <span>By John Doe</span><span>May 19</span> </div>
-                            </div>
-                        </div>
-                        <div class=" divider-line solid dark"></div>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div class="blog1-sidebar-posts">
-                            <div class="image-left"><img src="http://placehold.it/80x80" alt=""/></div>
-                            <div class="text-box-right">
-                                <h6 class="less-mar3 uppercase dosis nopadding text-white"><a href="#">Clean And Modern</a></h6>
-                                <p>Lorem ipsum dolor sit</p>
-                                <div class="blog1-post-info dark"> <span>By John Doe</span><span>May 19</span> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end item-->
-
-                <div class="col-md-4 bmargin clearfix">
-                    <h4 class="uppercase less-mar3 dosis text-white">search widget</h4>
-                    <div class="footer-title-bottomstrip2"></div>
-                    <div class="clearfix"></div>
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis. </p>
-                    <br/>
-                    <input class="blog1-sidebar-serch_input dark" type="search" placeholder="Email Address">
-                    <input name="" value="Submit" class="blog1-sidebar-serch-submit dark" type="submit">
-                    <div class="clearfix"></div>
-                    <br/>
-                    <br/>
-                    <ul class="social-icons-3 dark">
-                        <li><a class="twitter" href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="active" href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <!--end item-->
-
-                <div class="col-md-4 bmargin clearfix">
-                    <h4 class="uppercase less-mar3 dosis text-white">Featured News</h4>
-                    <div class="footer-title-bottomstrip2"></div>
-                    <div class="clearfix"></div>
-                    <div id="owl-demo11" class="owl-carousel">
-                        <div class="item"> <a href="#"><img src="http://placehold.it/400x220" alt="" class="img-responsive"/></a> <br/>
-                            <h4 class="dosis uppercase less-mar1 text-white"><a href="#">Aliquam ornare</a></h4>
-                            <div class="blog1-post-info dark"> <span>By John Doe</span><span>May 19</span> </div>
-                        </div>
-                        <!--end slide item-->
-
-                        <div class="item"> <a href="#"><img src="http://placehold.it/400x220" alt="" class="img-responsive"/></a> <br/>
-                            <h4 class="dosis uppercase less-mar1 text-white"><a href="#">Aliquam ornare</a></h4>
-                            <div class="blog1-post-info dark"> <span>By John Doe</span><span>May 19</span> </div>
-                        </div>
-                        <!--end slide item-->
-
-                    </div>
-                </div>
-                <!--end item-->
-
-                <div class="clearfix"></div>
-                <br/>
-                <br/>
-                <div class="divider-line solid dark"></div>
-                <br/>
                 <div class="col-md-2"> <br/>
-                    <img src="images/flogo.png" alt=""/> </div>
+                    <img src="{{asset('front-assets/images/flogo.png')}}" alt=""/> </div>
                 <div class="col-md-10">
                     <blockquote class="style1"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci.</span></blockquote>
                 </div>
@@ -305,7 +121,13 @@
     <section class="section-copyrights sec-moreless-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-12"> <span>Copyright © 2019 <a href="https://1.envato.market/hasta-html-by-codelayers">hasta</a> By <a href="https://1.envato.market/codelayers">Codelayers</a> | All rights reserved.</span></div>
+                <div class="col-md-12">
+                    <span>Copyright © 2020
+                        <a href="#">The Test Coder</a>
+                        By <a href="#">Youtube</a>
+                        |All rights reserved.
+                    </span>
+                </div>
             </div>
         </div>
     </section>

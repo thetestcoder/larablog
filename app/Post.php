@@ -38,4 +38,14 @@ class Post extends Model implements HasMedia
         return  $hasMedia != null ?
             $hasMedia->getUrl() : "";
     }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
