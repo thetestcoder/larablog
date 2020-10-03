@@ -28,6 +28,28 @@
     <link rel="stylesheet" href="{{asset('front-assets/css/et-line-font/et-line-font.css')}}">
     <link href="{{asset('front-assets/js/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('front-assets/js/jFlickrFeed/style.css')}}" />
+    <style>
+        a.previous-link, a.next-link{
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        span.next-link-disabled, span.previous-link-disabled{
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            background: #f1f1f1;
+            color: lightgray;
+        }
+        a.previous-link, a.next-link{
+            background: #dbdc33;
+            color: white;
+        }
+        a.previous-link:hover, a.next-link:hover{
+            background: #c3c418;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 <div class="site_wrapper">

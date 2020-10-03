@@ -34,4 +34,5 @@
     @empty
         <p>No Post Found</p>
     @endforelse
+    {{$posts->links('partials.paginator')}}
 @endsection

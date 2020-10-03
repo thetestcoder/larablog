@@ -10,7 +10,7 @@ class FrontController extends Controller
 {
     public function allPost()
     {
-        $posts = Post::where('status', 'publish')->get();
+        $posts = Post::where('status', 'publish')->latest()->paginate(2);
         return view('blog.home', compact('posts'));
     }
 }

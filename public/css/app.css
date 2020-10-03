@@ -1,5 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+a.previous-link,
+a.next-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a.previous-link:hover,
+a.next-link:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous-link {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next-link {
+  background-color: #4CAF50;
+  color: white;
+}
+
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
