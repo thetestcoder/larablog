@@ -22,9 +22,8 @@
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +245,9 @@
       <workItem from="1601259962030" duration="3003000" />
       <workItem from="1601267029993" duration="222000" />
       <workItem from="1601275090541" duration="15000" />
-      <workItem from="1601685315988" duration="4329000" />
+      <workItem from="1601685315988" duration="4467000" />
+      <workItem from="1601725455370" duration="55000" />
+      <workItem from="1601863932232" duration="1675000" />
     </task>
     <servers />
   </component>
@@ -275,10 +276,10 @@
     <state x="486" y="65" key="#com.intellij.ide.util.MemberChooser/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1600313966002" />
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1599451129603" />
     <state x="686" y="114" key="#com.intellij.ide.util.MemberChooser/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600313609682" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598528153608">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601725501554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1598528153608" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601725501554" />
     <state x="517" y="283" key="NewPhpFileDialog" timestamp="1598671222929">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -22,3 +22,4 @@ require 'admin.php';
 
 
 Route::get('/', 'Blog\FrontController@allPost');
+Route::get('/{post:slug}', 'Blog\FrontController@singlePost')->name('single-post');

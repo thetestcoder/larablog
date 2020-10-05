@@ -13,4 +13,9 @@ class FrontController extends Controller
         $posts = Post::where('status', 'publish')->latest()->paginate(2);
         return view('blog.home', compact('posts'));
     }
+
+    public function singlePost(Post $post)
+    {
+        return view('blog.single-post', compact('post'));
+    }
 }

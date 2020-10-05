@@ -14,7 +14,7 @@
                 </div>
                 <div class="text-box-inner">
                     <h4 class="dosis uppercase less-mar3">
-                        <a href="#">{{$post->title}}</a>
+                        <a href="{{route('single-post', [$post->slug])}}">{{$post->title}}</a>
                     </h4>
                     <div class="blog-post-info">
                         <span>
@@ -27,7 +27,7 @@
                     <p>{{$post->excerpt}}</p>
                     <br/>
                     <br/>
-                    <a href="#" class="btn btn-border yellow-green">Read more</a> </div>
+                    <a href="{{route('single-post', [$post->slug])}}" class="btn btn-border yellow-green">Read more</a> </div>
             </div>
         </div>
         <!--end post-->
