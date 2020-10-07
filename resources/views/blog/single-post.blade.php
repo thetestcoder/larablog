@@ -22,10 +22,14 @@
                                 <br/>
                                 <div class="blog1-post-info-box">
                                     <div class="text-box border padding-3">
-                                        <div class="iconbox-medium left round overflow-hidden"><img src="http://placehold.it/110x110" alt="" class="img-responsive"/></div>
+                                        <div class="iconbox-medium left round overflow-hidden">
+                                            <img src="{{$post->user->avatar}}" alt="" class="img-responsive"/>
+                                        </div>
                                         <div class="text-box-right more-padding-2">
-                                            <h4 class="uppercase dosis">Charlotte</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. </p>
+                                            <h4 class="uppercase dosis">{{$post->user->name}}</h4>
+                                            <div>
+                                                {!! $post->user->bio !!}
+                                            </div>
                                             <br/>
                                             <a class="btn btn-border yellow-green btn-small-2 " href="#">Read more</a> </div>
                                     </div>
