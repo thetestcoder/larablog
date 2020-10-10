@@ -13,7 +13,11 @@
                                 <br/>
                                 <ul class="blog1-social-icons">
                                     <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
+                                    <li>
+                                        <a href="https://www.facebook.com/codelayers">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
                                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
@@ -40,29 +44,26 @@
                                 <br/>
                                 <h4 class="dosis uppercase less-mar3"><a href="#">Related Posts</a></h4>
                                 <br/>
-                                <div class="col-md-4 bmargin">
-                                    <div class="image-holder"><a href="#"><img src="http://placehold.it/1000x800" alt="" class="img-responsive"/></a></div>
-                                    <div class="clearfix"></div>
-                                    <h5 class="dosis uppercase less-mar1"><a href="#">Aliquam ornare</a></h5>
-                                    <div class="blog1-post-info"> <span>By John Doe</span><span>May 19</span> </div>
-                                </div>
-                                <!--end item-->
 
-                                <div class="col-md-4 bmargin">
-                                    <div class="image-holder"><a href="#"><img src="http://placehold.it/1000x800" alt="" class="img-responsive"/></a></div>
-                                    <div class="clearfix"></div>
-                                    <h5 class="dosis uppercase less-mar1"><a href="#">Aliquam ornare</a></h5>
-                                    <div class="blog1-post-info"> <span>By John Doe</span><span>May 19</span> </div>
-                                </div>
-                                <!--end item-->
-
-                                <div class="col-md-4 bmargin">
-                                    <div class="image-holder"><a href="#"><img src="http://placehold.it/1000x800" alt="" class="img-responsive"/></a></div>
-                                    <div class="clearfix"></div>
-                                    <h5 class="dosis uppercase less-mar1"><a href="#">Aliquam ornare</a></h5>
-                                    <div class="blog1-post-info"> <span>By John Doe</span><span>May 19</span> </div>
-                                </div>
-                                <!--end item-->
+                                @forelse($relatedPosts as $single_post)
+                                    <div class="col-md-4 bmargin">
+                                        <div class="image-holder">
+                                            <a href="#">
+                                                <img src="{{$single_post->url}}" alt="{{$single_post->title}}"
+                                                     class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <h5 class="dosis uppercase less-mar1">
+                                            <a href="#">{{$single_post->title}}</a>
+                                        </h5>
+                                        <div class="blog1-post-info">
+                                            <span>By {{$single_post->user->name}}</span><span>
+                                                {{$single_post->created_at->diffForHumans()}}</span>
+                                        </div>
+                                    </div>
+                                @empty
+                                @endforelse
 
                                 <div class="clearfix"></div>
                                 <br/>

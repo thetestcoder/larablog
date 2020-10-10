@@ -16,6 +16,7 @@ class FrontController extends Controller
 
     public function singlePost(Post $post)
     {
-        return view('blog.single-post', compact('post'));
+        $relatedPosts = Post::where('id', "!=", $post->id)->take(3)->get();
+        return view('blog.single-post', compact(['post', 'relatedPosts']));
     }
 }

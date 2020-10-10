@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +169,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -248,6 +248,8 @@
       <workItem from="1601725455370" duration="55000" />
       <workItem from="1601863932232" duration="1862000" />
       <workItem from="1602038588303" duration="865000" />
+      <workItem from="1602065640923" duration="99000" />
+      <workItem from="1602297133290" duration="694000" />
     </task>
     <servers />
   </component>
@@ -284,9 +286,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="283" key="NewPhpFileDialog/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1598671222929" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1598581906950">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="183" y="9" key="SettingsEditor" timestamp="1602297238670">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
+    <state x="183" y="9" key="SettingsEditor/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1602297238670" />
     <state x="184" y="9" key="SettingsEditor/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1598581906950" />
   </component>
 </project>
