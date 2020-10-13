@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +248,9 @@
       <workItem from="1601863932232" duration="1862000" />
       <workItem from="1602038588303" duration="865000" />
       <workItem from="1602065640923" duration="99000" />
-      <workItem from="1602297133290" duration="694000" />
+      <workItem from="1602297133290" duration="1035000" />
+      <workItem from="1602300536632" duration="8000" />
+      <workItem from="1602553390127" duration="840000" />
     </task>
     <servers />
   </component>
@@ -291,5 +292,9 @@
     </state>
     <state x="183" y="9" key="SettingsEditor/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1602297238670" />
     <state x="184" y="9" key="SettingsEditor/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1598581906950" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602553871710">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1602553871710" />
   </component>
 </project>
