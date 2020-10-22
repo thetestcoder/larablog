@@ -23,3 +23,6 @@ require 'admin.php';
 
 Route::get('/', 'Blog\FrontController@allPost');
 Route::get('/{post:slug}', 'Blog\FrontController@singlePost')->name('single-post');
+
+
+Route::post('{post}/comment/store', 'CommentController@store')->name('comment.store');
