@@ -26,7 +26,7 @@ class CommentStoreRequest extends FormRequest
         return [
             'name'      => 'required',
             'email'     => 'required',
-            'comment'   => 'required|max:300|min:80'
+            'comment'   => 'required|max:300'
         ];
     }
 }

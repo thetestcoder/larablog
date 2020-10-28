@@ -16,15 +16,19 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:chapter_25" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CommentStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CommentStoreRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +38,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="chapter_25" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -270,7 +277,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="chapter_25" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -284,6 +303,10 @@
     <state x="486" y="65" key="#com.intellij.ide.util.MemberChooser/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1600313966002" />
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1599451129603" />
     <state x="686" y="114" key="#com.intellij.ide.util.MemberChooser/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600313609682" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603852266960">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1603852266960" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601725501554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,11 +315,19 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="283" key="NewPhpFileDialog/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1598671222929" />
+    <state x="782" y="139" key="RollbackChangesDialog" timestamp="1603852070614">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="139" key="RollbackChangesDialog/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603852070614" />
     <state x="183" y="9" key="SettingsEditor" timestamp="1602297238670">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="183" y="9" key="SettingsEditor/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1602297238670" />
     <state x="184" y="9" key="SettingsEditor/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1598581906950" />
+    <state x="700" y="172" key="VcsDiffUtil.ChangesDialog" timestamp="1603851978655">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="700" y="172" key="VcsDiffUtil.ChangesDialog/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603851978655" />
     <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602553871710">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

@@ -70,57 +70,29 @@
                 <br/>
                 <h4 class="dosis uppercase less-mar3"><a href="#">3 Comments</a></h4>
                 <br/>
-                <div class="blog1-post-info-box">
-                    <div class="text-box border padding-3">
-                        <div class="iconbox-medium left round overflow-hidden"><img src="http://placehold.it/110x110"
-                                                                                    alt="" class="img-responsive"/>
-                        </div>
-                        <div class="text-box-right more-padding-2">
-                            <h5 class="uppercase dosis less-mar2">Charlotte</h5>
-                            <div class="blog1-post-info"><span>July 15 2015 at 10:30 AM</span></div>
-                            <p class="paddtop1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et
-                                justo. Praesent mattis commodo augue. </p>
-                            <br/>
-                            <a class="btn btn-border yellow-green btn-small-2 " href="#">Reply</a></div>
-                    </div>
-                </div>
-                <!--end item-->
 
-                <div class="clearfix"></div>
-                <br/>
-                <div class="blog1-post-info-box">
-                    <div class="text-box border padding-3">
-                        <div class="iconbox-medium left round overflow-hidden"><img src="http://placehold.it/110x110"
-                                                                                    alt="" class="img-responsive"/>
+                @forelse($post->comments as $comment)
+                    <div class="blog1-post-info-box">
+                        <div class="text-box border padding-3">
+                            <div class="text-box-right more-padding-2">
+                                <h5 class="uppercase dosis less-mar2">{{$comment->name}}</h5>
+                                <div class="blog1-post-info">
+                                    <span>
+                                        {{$comment->created_at->diffForHumans()}}
+                                    </span>
+                                </div>
+                                <p class="paddtop1">{{$comment->comment}}</p>
+                                <br/>
+                                <a class="btn btn-border yellow-green btn-small-2 " href="#">Reply</a>
+                            </div>
                         </div>
-                        <div class="text-box-right more-padding-2">
-                            <h5 class="uppercase dosis less-mar2">John William</h5>
-                            <div class="blog1-post-info"><span>July 15 2015 at 10:30 AM</span></div>
-                            <p class="paddtop1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et
-                                justo. Praesent mattis commodo augue. </p>
-                            <br/>
-                            <a class="btn btn-border yellow-green btn-small-2 " href="#">Reply</a></div>
                     </div>
-                </div>
-                <!--end item-->
+                    <!--end item-->
 
-                <div class="clearfix"></div>
-                <br/>
-                <div class="blog1-post-info-box less-width pull-right">
-                    <div class="text-box border padding-3">
-                        <div class="iconbox-medium left round overflow-hidden"><img src="http://placehold.it/110x110"
-                                                                                    alt="" class="img-responsive"/>
-                        </div>
-                        <div class="text-box-right more-padding-2">
-                            <h5 class="uppercase dosis less-mar2">John William</h5>
-                            <div class="blog1-post-info"><span>July 15 2015 at 10:30 AM</span></div>
-                            <p class="paddtop1">Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                            <br/>
-                            <a class="btn btn-border yellow-green btn-small-2 " href="#">Reply</a></div>
-                    </div>
-                </div>
-                <!--end item-->
-                <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                    <br/>
+                @empty
+                @endforelse
                 <a class="loadmore-but" href="#">Load more Comments</a>
                 <div class="smart-forms bmargin">
                     <h4 class=" dosis uppercase">Post a Comment</h4>
@@ -139,7 +111,7 @@
                                         id="sendername"
                                         class="gui-input form-control"
                                         placeholder="Enter name">
-                                    </label>
+                                </label>
                             </div>
                             <!-- end section -->
 
@@ -151,7 +123,7 @@
                                         id="emailaddress"
                                         class="gui-input form-control"
                                         placeholder="Email address">
-                                    </label>
+                                </label>
                             </div>
                             <!-- end section -->
 
