@@ -36,11 +36,10 @@
                 <h5 class="uppercase dosis">Categories</h5>
                 <div class="clearfix"></div>
                 <ul class="category-links">
-                    <li><a href="#">Business</a></li>
-                    <li><a class="active" href="#">Education</a></li>
-                    <li><a href="#">Medical</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li><a href="#">Photogreaphy</a></li>
+                    @forelse($categories as $category)
+                        <li><a href="#">{{$category->name}}</a></li>
+                    @empty
+                    @endforelse
                 </ul>
             </div>
         </div>
@@ -52,35 +51,33 @@
             <div class="text-box-inner">
                 <h5 class="uppercase dosis">Latest Posts</h5>
                 <div class="clearfix"></div>
-                <div class="blog1-sidebar-posts">
-                    <div class="image-left"><img src="http://placehold.it/80x80" alt=""/></div>
-                    <div class="text-box-right">
-                        <h6 class="less-mar3 uppercase dosis nopadding"><a href="#">Clean And Modern</a></h6>
-                        <p>Lorem ipsum dolor sit</p>
-                        <div class="post-info"> <span>By John Doe</span><span>May 19</span> </div>
-                    </div>
-                </div>
-                <!--end item-->
+                @forelse($latestPosts as $single_post)
+                    <div class="blog1-sidebar-posts">
+                        <div class="image-left">
+                            <img src="{{$single_post->url}}"
+                                 width="80px"
+                                 height="80px"
+                                 alt="{{$single_post->title}}"
+                                 style="background-size: cover"
 
-                <div class="blog1-sidebar-posts active">
-                    <div class="image-left"><img src="http://placehold.it/80x80" alt=""/></div>
-                    <div class="text-box-right">
-                        <h6 class="less-mar3 uppercase dosis nopadding"><a href="#">Clean And Modern</a></h6>
-                        <p>Lorem ipsum dolor sit</p>
-                        <div class="post-info"> <span>By John Doe</span><span>May 19</span> </div>
+                            />
+                        </div>
+                        <div class="text-box-right">
+                            <h6 class="less-mar3 uppercase dosis nopadding">
+                                <a
+                                    href="{{route('single-post', [$single_post->slug])}}">
+                                    {{$single_post->title}}
+                                </a>
+                            </h6>
+                            <div class="post-info">
+                                <span>By {{$single_post->user->name}}</span>
+                                <span>{{$single_post->created_at->diffForHumans()}}</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--end item-->
-
-                <div class="blog1-sidebar-posts">
-                    <div class="image-left"><img src="http://placehold.it/80x80" alt=""/></div>
-                    <div class="text-box-right">
-                        <h6 class="less-mar3 uppercase dosis nopadding"><a href="#">Clean And Modern</a></h6>
-                        <p>Lorem ipsum dolor sit</p>
-                        <div class="post-info"> <span>By John Doe</span><span>May 19</span> </div>
-                    </div>
-                </div>
-                <!--end item-->
+                    <!--end item-->
+                @empty
+                @endforelse
 
             </div>
         </div>
