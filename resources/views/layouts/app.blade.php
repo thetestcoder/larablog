@@ -181,5 +181,6 @@
 <script src="{{asset('front-assets/js/scrolltotop/totop.js')}}"></script>
 
 <script src="{{asset('front-assets/js/scripts/functions.js')}}" type="text/javascript"></script>
+@yield('scripts')
 </body>
 </html>

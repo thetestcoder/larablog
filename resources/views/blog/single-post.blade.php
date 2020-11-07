@@ -83,8 +83,18 @@
                                 </div>
                                 <p class="paddtop1">{{$comment->comment}}</p>
                                 <br/>
-                                <a class="btn btn-border yellow-green btn-small-2 " href="#">Reply</a>
+                                <a
+                                    class="btn btn-border yellow-green btn-small-2 "
+                                    href="#comment-form"
+                                    onclick="document.getElementById('comment_id').value = {{$comment->id}}"
+                                >
+                                    Reply
+                                </a>
                             </div>
+                            @forelse($comment->replies as $reply)
+                                @include('blog.partials._replies', ['reply'=> $reply])
+                            @empty
+                            @endforelse
                         </div>
                     </div>
                     <!--end item-->
@@ -94,7 +104,7 @@
                 @empty
                 @endforelse
                 <a class="loadmore-but" href="#">Load more Comments</a>
-                <div class="smart-forms bmargin">
+                <div class="smart-forms bmargin" id="comment-form">
                     <h4 class=" dosis uppercase">Post a Comment</h4>
 
                     <form
@@ -102,6 +112,7 @@
                         action="{{route('comment.store', [$post->id])}}"
                         id="smart-form">
                         @csrf
+                        <input type="hidden" name="comment_id" id="comment_id">
                         <div>
                             <div class="section form-group">
                                 <label class="field prepend-icon">
@@ -164,4 +175,10 @@
     <!--end post-->
     <!--end main bg-->
     <div class="clearfix"></div>
+@endsection
+
+@section('scripts')
+    <script>
+
+    </script>
 @endsection
