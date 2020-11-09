@@ -37,7 +37,13 @@
                 <div class="clearfix"></div>
                 <ul class="category-links">
                     @forelse($categories as $category)
-                        <li><a href="#">{{$category->name}}</a></li>
+                        <li>
+                            <a
+                                href="{{route('category-post', [$category->slug])}}"
+                            >
+                                {{$category->name}}
+                            </a>
+                        </li>
                     @empty
                     @endforelse
                 </ul>

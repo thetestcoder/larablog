@@ -22,6 +22,10 @@ require 'admin.php';
 
 
 Route::get('/', 'Blog\FrontController@allPost');
+
+Route::get('/category/{category:slug}', "Blog\FrontController@categoryWisePosts")
+->name('category-post');
+
 Route::get('/{post:slug}', 'Blog\FrontController@singlePost')->name('single-post');
 
 
