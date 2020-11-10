@@ -27,9 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +169,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backpanel/tags" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -183,15 +182,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\resources\views\backpanel\tags" />
       <recent name="C:\laragon\www\larablog\resources\views\template" />
       <recent name="C:\laragon\www\larablog\public\front-assets" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel\categories" />
-      <recent name="C:\laragon\www\larablog\resources\views\backpanel\roles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -267,7 +266,9 @@
       <workItem from="1604023641291" duration="1525000" />
       <workItem from="1604710925332" duration="1979000" />
       <workItem from="1604714271106" duration="252000" />
-      <workItem from="1604888367596" duration="574000" />
+      <workItem from="1604888367596" duration="704000" />
+      <workItem from="1604924115751" duration="627000" />
+      <workItem from="1604974567867" duration="2020000" />
     </task>
     <servers />
   </component>
@@ -308,6 +309,10 @@
     <state x="486" y="65" key="#com.intellij.ide.util.MemberChooser/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1600313966002" />
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1599451129603" />
     <state x="686" y="114" key="#com.intellij.ide.util.MemberChooser/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600313609682" />
+    <state x="410" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604976568879">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="410" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1604976568879" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603852266960">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

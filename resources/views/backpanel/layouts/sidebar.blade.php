@@ -28,6 +28,12 @@
                 </a>
             </li>
             <li class="nav-item ">
+                <a class="nav-link" href="{{route('tag.index')}}">
+                    <i class="material-icons">scatter_plot</i>
+                    <p>Tags</p>
+                </a>
+            </li>
+            <li class="nav-item ">
                 <a class="nav-link" href="{{route('permission.index')}}">
                     <i class="material-icons">work</i>
                     <p>Permissions</p>

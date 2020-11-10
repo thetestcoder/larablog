@@ -42,3 +42,18 @@ Route::delete('/backpanel/post/{post}/force-delete', 'User\PostController@forceD
     ->name('post.force.delete');
 Route::resource('/backpanel/post', 'User\PostController');
 
+
+// tags
+Route::get('/backpanel/tag/trashed', 'TagController@trashedTag')
+    ->name('tag.trash');
+
+
+Route::post('/backpanel/tag/{tag}/restore', 'TagController@restoreTag')
+    ->name('tag.restore');
+
+
+Route::delete('/backpanel/tag/{tag}/force-delete', 'TagController@forceDeleteTag')
+    ->name('tag.force.delete');
+
+
+Route::resource('/backpanel/tag', "TagController");
