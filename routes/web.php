@@ -20,6 +20,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 require 'admin.php';
 
+Route::get('/test-route', function (){
+    $post = \App\Post::find(1);
+
+    return $post->tags;
+});
+
 
 Route::get('/', 'Blog\FrontController@allPost');
 
@@ -30,3 +36,7 @@ Route::get('/{post:slug}', 'Blog\FrontController@singlePost')->name('single-post
 
 
 Route::post('{post}/comment/store', 'CommentController@store')->name('comment.store');
+
+
+
+

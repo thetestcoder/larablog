@@ -55,4 +55,9 @@ class Post extends Model implements HasMedia
             ->latest()
             ->whereNull('parent_id');
     }
+
+    public function tags()
+    {
+        return $this->morphToMany(Tag::class, 'taggable');
+    }
 }

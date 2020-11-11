@@ -17,4 +17,9 @@ class Tag extends Model
         $this->attributes['slug']  = str_slug($value);
     }
 
+    public function posts()
+    {
+        return $this->morphedByMany(Post::class, 'taggable');
+    }
+
 }
