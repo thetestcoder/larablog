@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Category;
 use App\Http\Controllers\Controller;
 use App\Post;
+use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Spatie\Image\Image;
@@ -53,6 +54,22 @@ class PostController extends Controller
         if($request->hasFile('feature_image')){
             $post->addMedia($request->feature_image)
                 ->toMediaCollection("feature_image");
+        }
+
+        if($request->has('tags')){
+            $tags = explode(",", $request->tags);
+            $tags_id = [];
+
+            foreach ($tags as $tag){
+                $tag_model = Tag::where('name', $tag)->first();
+                if($tag_model){
+                    array_push($tags_id, $tag_model->id);
+                }else{
+                    array_push($tags_id, (Tag::create(['name'=>$tag]))->id);
+                }
+            }
+
+            $post->tags()->sync($tags_id);
         }
 
         return redirect()->route('post.index')
