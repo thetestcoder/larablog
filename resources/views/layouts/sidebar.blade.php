@@ -96,14 +96,15 @@
                 <h5 class="uppercase dosis">Tags</h5>
                 <div class="clearfix"></div>
                 <ul class="tags">
-                    <li><a href="#">Animation</a></li>
-                    <li><a href="#">Art</a></li>
-                    <li><a href="#">UI Design</a></li>
-                    <li><a href="#">Photography</a></li>
-                    <li><a class="active" href="#">Design</a></li>
-                    <li><a href="#">Art</a></li>
-                    <li><a href="#">Responsive</a></li>
-                    <li><a href="#">Develop</a></li>
+                    @forelse($sidebarTags as $sidebarTag)
+                    <li>
+                        <a
+                            href="{{route('tag-post', [$sidebarTag->slug])}}"
+                        >
+                            {{$sidebarTag->name}}</a>
+                    </li>
+                    @empty
+                    @endforelse
                 </ul>
             </div>
         </div>

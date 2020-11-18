@@ -9,6 +9,13 @@
                 </div>
                 {!! $post->content !!}
                 <br/>
+                <div class="tag-box">
+                    <span>Tags: </span>
+                    @forelse($post->tags as $tag)
+                        <a href="{{route('tag-post', [$tag->slug])}}" class="tag-link">{{$tag->name}}</a>
+                    @empty
+                    @endforelse
+                </div>
                 <h4 class="dosis uppercase less-mar3"><a href="#">Share this article</a></h4>
                 <br/>
                 <ul class="blog1-social-icons">
@@ -177,8 +184,18 @@
     <div class="clearfix"></div>
 @endsection
 
-@section('scripts')
-    <script>
-
-    </script>
+@section('styles')
+    <style>
+        .tag-box{
+            margin: 10px 0;
+        }
+        .tag-link{
+            background-color: #dbdc33;
+            padding: 7px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+    </style>
 @endsection

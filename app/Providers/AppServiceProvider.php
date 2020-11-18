@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Category;
 use App\Post;
+use App\Tag;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -31,6 +32,15 @@ class AppServiceProvider extends ServiceProvider
         // latest post share to all view
         $latestPost = Post::latest()->take(3)->get();
         View::share('latestPosts', $latestPost);
+
+        //tags who has post
+        $tags = Tag::whereHas('posts')
+            ->withCount('posts')
+            ->orderBy('posts_count', "DESC")
+            ->limit(12)
+            ->get();
+
+        View::share('sidebarTags', $tags);
 
     }
 }

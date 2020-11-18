@@ -27,9 +27,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backpanel/tags" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/blog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -183,15 +186,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\resources\views\blog" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel\tags" />
       <recent name="C:\laragon\www\larablog\resources\views\template" />
       <recent name="C:\laragon\www\larablog\public\front-assets" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel" />
-      <recent name="C:\laragon\www\larablog\resources\views\backpanel\categories" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -276,7 +279,8 @@
       <workItem from="1605268360866" duration="24000" />
       <workItem from="1605279405161" duration="70000" />
       <workItem from="1605513222467" duration="136000" />
-      <workItem from="1605584757919" duration="862000" />
+      <workItem from="1605584757919" duration="1059000" />
+      <workItem from="1605670998176" duration="1900000" />
     </task>
     <servers />
   </component>
