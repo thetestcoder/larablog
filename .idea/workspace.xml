@@ -28,10 +28,11 @@
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/category-wise-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/category-wise-post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/single-post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/tag-wise-post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/tag-wise-post.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,15 +187,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\larablog\resources\views\blog" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel\tags" />
       <recent name="C:\laragon\www\larablog\resources\views\template" />
       <recent name="C:\laragon\www\larablog\public\front-assets" />
       <recent name="C:\laragon\www\larablog\resources\views\backpanel" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\larablog\public\back-assets\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -280,7 +281,8 @@
       <workItem from="1605279405161" duration="70000" />
       <workItem from="1605513222467" duration="136000" />
       <workItem from="1605584757919" duration="1059000" />
-      <workItem from="1605670998176" duration="1900000" />
+      <workItem from="1605670998176" duration="2322000" />
+      <workItem from="1605752900744" duration="2244000" />
     </task>
     <servers />
   </component>

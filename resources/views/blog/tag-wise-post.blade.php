@@ -19,7 +19,8 @@
                     </h4>
                     <div class="blog-post-info">
                         <span>
-                            <i class="fa fa-user"></i> By {{$post->user->name}}
+                            <i class="fa fa-user"></i> By
+                            <a href="{{route('author-post', [$post->user->slug])}}">{{$post->user->name}}</a>
                         </span>
                         <span>
                             <i class="fa fa-comments-o"></i> 15 Comments</span>

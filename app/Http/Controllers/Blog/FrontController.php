@@ -6,6 +6,7 @@ use App\Category;
 use App\Http\Controllers\Controller;
 use App\Post;
 use App\Tag;
+use App\User;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -30,5 +31,10 @@ class FrontController extends Controller
     public function tagWisePosts(Tag $tag)
     {
         return view('blog.tag-wise-post', compact('tag'));
+    }
+
+    public function authorWisePosts(User $user)
+    {
+        return view('blog.author-wise-post', compact('user'));
     }
 }

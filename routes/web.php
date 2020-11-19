@@ -35,6 +35,9 @@ Route::get('/category/{category:slug}', "Blog\FrontController@categoryWisePosts"
 Route::get('/tag/{tag:slug}', "Blog\FrontController@tagWisePosts")
     ->name('tag-post');
 
+Route::get('/author/{user:slug}', "Blog\FrontController@authorWisePosts")
+    ->name('author-post');
+
 Route::get('/{post:slug}', 'Blog\FrontController@singlePost')->name('single-post');
 
 

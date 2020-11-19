@@ -37,7 +37,13 @@
                             <img src="{{$post->user->avatar}}" alt="" class="img-responsive"/>
                         </div>
                         <div class="text-box-right more-padding-2">
-                            <h4 class="uppercase dosis">{{$post->user->name}}</h4>
+                            <h4 class="uppercase dosis">
+                                <a
+                                    href="{{route('author-post', [$post->user->slug])}}"
+                                >
+                                    {{$post->user->name}}
+                                </a>
+                            </h4>
                             <div>
                                 {!! $post->user->bio !!}
                             </div>

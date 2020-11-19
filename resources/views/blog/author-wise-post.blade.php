@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
-    <h3>Category: {{$category->name}}</h3>
-    @forelse($category->posts as $post)
+    <h3>Author: {{$user->name}}</h3>
+    @forelse($user->posts as $post)
         <div class="col-md-12 nopadding">
             <div class="blog1-post-holder">
                 <div class="image-holder">
                     <div class="post-info">
                         <span>
-                            <i class="fa fa-user"></i> {{$category->name}}
+                            <i class="fa fa-user"></i> {{$post->category->name}}
                         </span>
                         <span><i class="fa fa-calendar"></i> {{$post->created_at->diffForHumans()}}</span>
                     </div>
