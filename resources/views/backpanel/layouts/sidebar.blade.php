@@ -21,6 +21,7 @@
                     <p>Posts</p>
                 </a>
             </li>
+            @hasanyrole('editor|admin')
             <li class="nav-item ">
                 <a class="nav-link" href="{{route('category.index')}}">
                     <i class="material-icons">all_inbox</i>
@@ -33,6 +34,8 @@
                     <p>Tags</p>
                 </a>
             </li>
+            @endhasanyrole
+            @role('admin')
             <li class="nav-item ">
                 <a class="nav-link" href="{{route('permission.index')}}">
                     <i class="material-icons">work</i>
@@ -51,6 +54,7 @@
                     <p>User</p>
                 </a>
             </li>
+            @endrole
             <!-- your sidebar here -->
         </ul>
     </div>

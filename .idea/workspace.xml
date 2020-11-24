@@ -26,7 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +170,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -276,7 +279,14 @@
       <workItem from="1605584757919" duration="1059000" />
       <workItem from="1605670998176" duration="2322000" />
       <workItem from="1605752900744" duration="2244000" />
-      <workItem from="1605758638427" duration="90000" />
+      <workItem from="1605758638427" duration="148000" />
+      <workItem from="1605763314971" duration="15000" />
+      <workItem from="1605768494373" duration="3231000" />
+      <workItem from="1605881458655" duration="503000" />
+      <workItem from="1606037996978" duration="278000" />
+      <workItem from="1606115242729" duration="12000" />
+      <workItem from="1606116473369" duration="617000" />
+      <workItem from="1606182954400" duration="1417000" />
     </task>
     <servers />
   </component>
@@ -325,10 +335,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1603852266960" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601725501554">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605771334325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601725501554" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605771334325" />
     <state x="517" y="283" key="NewPhpFileDialog" timestamp="1598671222929">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -346,9 +356,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="172" key="VcsDiffUtil.ChangesDialog/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603851978655" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604888579301">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state x="668" y="95" width="583" height="849" key="find.popup" timestamp="1605771465897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="95" width="583" height="849" key="find.popup/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605771465897" />
+    <state x="484" y="70" width="949" height="969" key="search.everywhere.popup" timestamp="1605770223925">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1604888579301" />
+    <state x="484" y="70" width="949" height="969" key="search.everywhere.popup/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605770223925" />
   </component>
 </project>
