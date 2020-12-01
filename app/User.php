@@ -75,4 +75,10 @@ class User extends Authenticatable implements HasMedia
     {
         return $this->hasMany(Post::class);
     }
+
+    public function isModerator(array $permissions = []) : bool
+    {
+        return $this->hasAnyRole(['admin', 'editor'])
+                && $this->hasAnyPermission($permissions);
+    }
 }

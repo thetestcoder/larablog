@@ -47,7 +47,7 @@ class PostController extends Controller
             'content'       => $request->post_content,
             'status'        => $request->status,
             'excerpt'       => $request->excerpt,
-            'user_id'       => 7,
+            'user_id'       => auth()->id(),
             'category_id'   => $request->category_id
         ]);
 
@@ -95,6 +95,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        $this->authorize('update', $post);
         $categories = Category::all();
         return view('backpanel.posts.edit', compact(['post', 'categories']));
     }
@@ -108,12 +109,12 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+        $this->authorize('update', $post);
         $post->update([
             'title'         => $request->input('title', $post->title),
             'content'       => $request->input('post_content', $post->content),
             'status'        => $request->input('status', $post->status),
             'excerpt'       => $request->input('excerpt', $post->excerpt),
-            'user_id'       => 7,
             'category_id'   => $request->input('category_id', $post->category_id)
         ]);
 
@@ -135,6 +136,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
+        $this->authorize('delete', $post);
         $post->delete();
         return redirect()->route('post.index')
             ->with('success', "Post Deleted Successfully");
@@ -157,6 +159,7 @@ class PostController extends Controller
     public function forceDeletePost($id)
     {
         $post =  Post::withTrashed()->where('id', $id)->first();
+        $this->authorize('delete', $post);
         $post->getMedia('feature_image')[0]->delete();
         $post->forceDelete();
         return redirect()

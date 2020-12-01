@@ -4,7 +4,9 @@ Route::group([
     'middleware' => ['auth'],
     'prefix' => 'backpanel'
 ], function () {
-    Route::view('/', 'backpanel.dashboard.index')->name('backpanel.dashboard');
+    Route::get('/',function (){
+        return view( 'backpanel.dashboard.index');
+    })->name('backpanel.dashboard');
 
     Route::group(['middleware'=>'role:admin'], function () {
         //user routes

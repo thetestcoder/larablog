@@ -22,12 +22,22 @@
                 <td>{{$post->title}}</td>
                 <td>{{$post->slug}}</td>
                 <td class="d-flex">
-                   <div>
-                       <a href="{{route('post.edit', [$post->id])}}" class="btn btn-warning btn-sm rounded">
-                           <i class="material-icons">edit</i>
-                           Edit
-                       </a>
-                   </div>
+                    <div>
+                        <a href="{{route('single-post', [$post->slug])}}"
+                           class="btn btn-success btn-sm rounded">
+                            <i class="material-icons">remove_red_eye</i>
+                            View
+                        </a>
+                    </div>
+                   @can('update', $post)
+                        <div>
+                            <a href="{{route('post.edit', [$post->id])}}" class="btn btn-warning btn-sm rounded">
+                                <i class="material-icons">edit</i>
+                                Edit
+                            </a>
+                        </div>
+                    @endcan
+                    @can('delete', $post)
                     <form action="{{route('post.destroy', [$post->id])}}" method="post">
                         @csrf
                         @method('DELETE')
@@ -36,6 +46,7 @@
                             Delete
                         </button>
                     </form>
+                    @endcan
                 </td>
             </tr>
         @empty
