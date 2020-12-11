@@ -61,4 +61,19 @@ Route::group([
     Route::delete('/post/{post}/force-delete', 'User\PostController@forceDeletePost')
         ->name('post.force.delete');
     Route::resource('/post', 'User\PostController');
+
+
+    //comments route
+    Route::get('/comments', "CommentController@index")
+        ->name('comment.index');
+
+    Route::put('/comments/{comment}/approve', "CommentController@approve")
+                ->name('comment.approve');
+
+    Route::get('/comments/edit/{comment}', "CommentController@edit")
+        ->name('comment.edit');
+    Route::put('/comments/edit/{comment}', "CommentController@update")
+        ->name('comment.update');
+    Route::delete('/comments/delete/{comment}', "CommentController@destroy")
+        ->name('comment.destroy');
 });

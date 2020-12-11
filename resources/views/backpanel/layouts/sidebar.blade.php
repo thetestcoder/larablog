@@ -35,6 +35,12 @@
                 </a>
             </li>
             @endhasanyrole
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('comment.index')}}">
+                    <i class="material-icons">batch_prediction</i>
+                    <p>Comments</p>
+                </a>
+            </li>
             @role('admin')
             <li class="nav-item ">
                 <a class="nav-link" href="{{route('permission.index')}}">
