@@ -25,12 +25,13 @@ class UserRequest extends FormRequest
     {
         $on_update = $this->method() == "PUT" ? "": "|unique:users,email";
         $on_user_update = $this->method() == "PUT" ? "": "required|";
+        $avatar_on_update = $this->method() == "PUT" ? "": $on_user_update.'image';
         return [
             'name'      => 'required|max:50',
             'email'     => 'required|email'.$on_update,
             'password'  => $on_user_update.'min:6',
             'role_id'   => 'required|numeric',
-            'avatar'    => 'required|image'
+            'avatar'    => $avatar_on_update
         ];
     }
 

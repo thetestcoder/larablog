@@ -56,21 +56,7 @@ class PostController extends Controller
                 ->toMediaCollection("feature_image");
         }
 
-        if($request->has('tags')){
-            $tags = explode(",", $request->tags);
-            $tags_id = [];
-
-            foreach ($tags as $tag){
-                $tag_model = Tag::where('name', $tag)->first();
-                if($tag_model){
-                    array_push($tags_id, $tag_model->id);
-                }else{
-                    array_push($tags_id, (Tag::create(['name'=>$tag]))->id);
-                }
-            }
-
-            $post->tags()->sync($tags_id);
-        }
+        $tags_id = $this->addAndSyncTags($request, $post);
 
         return redirect()->route('post.index')
             ->with('success', "Post Added Successfully");
@@ -123,6 +109,8 @@ class PostController extends Controller
             $post->addMedia($request->feature_image)
                 ->toMediaCollection("feature_image");
         }
+
+        $tags_id = $this->addAndSyncTags($request, $post);
 
         return redirect()->route('post.index')
             ->with('success', "Post Updated Successfully");
@@ -186,5 +174,30 @@ class PostController extends Controller
 
         echo $res;
 
+    }
+
+    /**
+     * @param Request $request
+     * @param $post
+     * @return array
+     */
+    private function addAndSyncTags(Request $request, $post): array
+    {
+        if ($request->has('tags')) {
+            $tags = explode(",", $request->tags);
+            $tags_id = [];
+
+            foreach ($tags as $tag) {
+                $tag_model = Tag::where('name', $tag)->first();
+                if ($tag_model) {
+                    array_push($tags_id, $tag_model->id);
+                } else {
+                    array_push($tags_id, (Tag::create(['name' => $tag]))->id);
+                }
+            }
+
+            $post->tags()->sync($tags_id);
+        }
+        return $tags_id;
     }
 }

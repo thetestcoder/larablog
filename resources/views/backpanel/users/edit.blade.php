@@ -40,6 +40,11 @@
                 @endforeach
             </select>
         </div>
+        <label for="avatar">Avatar</label>
+        @if($user->avatar)
+            <img src="{{$user->avatar}}" alt="{{$user->name}}">
+        @endif
+        <input type="file" name="avatar" id="avatar">
         <button
             class="btn btn-primary btn-block rounded"
             type="submit">Update User</button>

@@ -27,10 +27,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_014737_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_014737_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/User/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/User/UserRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/comments/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/comments/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/posts/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/users/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,11 +198,26 @@
       <recent name="C:\laragon\www\larablog\public\back-assets\css" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.watch" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -295,6 +313,11 @@
       <workItem from="1606793257891" duration="1960000" />
       <workItem from="1606796326220" duration="138000" />
       <workItem from="1607657066807" duration="2066000" />
+      <workItem from="1607659963912" duration="56000" />
+      <workItem from="1607829897928" duration="12000" />
+      <workItem from="1608101861379" duration="6000" />
+      <workItem from="1608257665821" duration="3402000" />
+      <workItem from="1608264218295" duration="1836000" />
     </task>
     <servers />
   </component>
@@ -327,51 +350,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="486" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1600313966002">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="486" y="65" key="#com.intellij.ide.util.MemberChooser/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1600313966002" />
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1599451129603" />
-    <state x="686" y="114" key="#com.intellij.ide.util.MemberChooser/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600313609682" />
-    <state x="410" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604976568879">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="410" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1604976568879" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603852266960">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1603852266960" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605771334325">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605771334325" />
-    <state x="517" y="283" key="NewPhpFileDialog" timestamp="1598671222929">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="517" y="283" key="NewPhpFileDialog/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1598671222929" />
-    <state x="782" y="139" key="RollbackChangesDialog" timestamp="1603852070614">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="782" y="139" key="RollbackChangesDialog/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603852070614" />
-    <state x="183" y="9" key="SettingsEditor" timestamp="1602297238670">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="183" y="9" key="SettingsEditor/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1602297238670" />
-    <state x="184" y="9" key="SettingsEditor/1366.-8.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1598581906950" />
-    <state x="700" y="172" key="VcsDiffUtil.ChangesDialog" timestamp="1603851978655">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="700" y="172" key="VcsDiffUtil.ChangesDialog/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603851978655" />
-    <state x="668" y="95" width="583" height="849" key="find.popup" timestamp="1605771465897">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="668" y="95" width="583" height="849" key="find.popup/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605771465897" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606794781524">
-      <screen x="0" y="0" width="1360" height="728" />
-    </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/1360.-8.1920.1040/0.0.1360.728@0.0.1360.728" timestamp="1606794781524" />
-    <state x="484" y="70" width="949" height="969" key="search.everywhere.popup/1920.-8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605770223925" />
   </component>
 </project>
