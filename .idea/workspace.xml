@@ -27,6 +27,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteOptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteOptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_024015_create_site_options_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_024015_create_site_options_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,6 +320,11 @@
       <workItem from="1608264218295" duration="1836000" />
       <workItem from="1608694863590" duration="98000" />
       <workItem from="1609382208814" duration="1081000" />
+      <workItem from="1609384006127" duration="151000" />
+      <workItem from="1609552049871" duration="993000" />
+      <workItem from="1609646393591" duration="13000" />
+      <workItem from="1609855277214" duration="9000" />
+      <workItem from="1609897839034" duration="6331000" />
     </task>
     <servers />
   </component>

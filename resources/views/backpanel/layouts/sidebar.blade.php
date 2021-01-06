@@ -1,4 +1,9 @@
-<div class="sidebar" data-color="purple" data-background-color="white" style="overflow-y: scroll">
+<div
+    class="sidebar"
+    data-color="purple"
+    data-background-color="white"
+    style="overflow-y: scroll; overflow-x: hidden"
+>
     <div class="logo">
         <a href="#" class="simple-text logo-mini">
             <img src="{{auth()->user()->avatar}}" alt="{{auth()->user()->name}}" class="img-fluid rounded-circle"
@@ -62,6 +67,13 @@
                 <a class="nav-link" href="{{route('role.index')}}">
                     <i class="material-icons">group_work</i>
                     <p>Roles</p>
+                </a>
+            </li>
+            <li class="nav-item @if(Request::is('backpanel/site-settings')) active
+@endif">
+                <a class="nav-link" href="{{route('setting.index')}}">
+                    <i class="material-icons">settings</i>
+                    <p>Site Settings</p>
                 </a>
             </li>
             <li class="nav-item @if(Request::is('backpanel/user') || Request::is('backpanel/user/*')) active

@@ -4,11 +4,11 @@ Route::group([
     'middleware' => ['auth'],
     'prefix' => 'backpanel'
 ], function () {
-    Route::get('/',function (){
-        return view( 'backpanel.dashboard.index');
+    Route::get('/', function () {
+        return view('backpanel.dashboard.index');
     })->name('backpanel.dashboard');
 
-    Route::group(['middleware'=>'role:admin'], function () {
+    Route::group(['middleware' => 'role:admin'], function () {
         //user routes
         Route::resource('/user', 'User\UserController');
         //role routes
@@ -25,7 +25,7 @@ Route::group([
         Route::resource('/permission', 'User\PermissionController');
     });
 
-    Route::group(['middleware' => "role:admin|editor"], function (){
+    Route::group(['middleware' => "role:admin|editor"], function () {
         //category Route
         Route::get('/category/trashed', 'User\CategoryController@trashedCategory')
             ->name('category.trash');
@@ -68,7 +68,7 @@ Route::group([
         ->name('comment.index');
 
     Route::put('/comments/{comment}/approve', "CommentController@approve")
-                ->name('comment.approve');
+        ->name('comment.approve');
 
     Route::get('/comments/edit/{comment}', "CommentController@edit")
         ->name('comment.edit');
@@ -76,4 +76,8 @@ Route::group([
         ->name('comment.update');
     Route::delete('/comments/delete/{comment}', "CommentController@destroy")
         ->name('comment.destroy');
+
+    //site settings
+    Route::get("/site-settings", "SiteOptionController@index")->name('setting.index');
+    Route::post("/site-settings", "SiteOptionController@store")->name('setting.store');
 });

@@ -7,7 +7,7 @@ use \Illuminate\Support\Facades\DB;
 
 class CreateSiteOptionsTable extends Migration
 {
-    private $copyrightText = "Copyright © 2020 The Test Coder By Youtube |All rights reserved. ";
+    private $copyrightText = "Copyright © 2020 The Test Coder By Youtube | All rights reserved.";
 
     /**
      * Run the migrations.
