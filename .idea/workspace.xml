@@ -27,12 +27,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteOptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteOptionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_024015_create_site_options_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_024015_create_site_options_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backpanel/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,6 +322,11 @@
       <workItem from="1609646393591" duration="13000" />
       <workItem from="1609855277214" duration="9000" />
       <workItem from="1609897839034" duration="6331000" />
+      <workItem from="1609907819608" duration="177000" />
+      <workItem from="1609993354501" duration="1250000" />
+      <workItem from="1610072869052" duration="17000" />
+      <workItem from="1610156850769" duration="98000" />
+      <workItem from="1610156986752" duration="2663000" />
     </task>
     <servers />
   </component>

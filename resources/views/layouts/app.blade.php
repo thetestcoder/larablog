@@ -12,40 +12,51 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-    <link href='https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://www.google.com/fonts#UsePlace:use/Collection:Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet'
+          type='text/css'>
+    <link href='https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif:400,400italic,700,700italic'
+          rel='stylesheet' type='text/css'>
+    <link
+        href='https://www.google.com/fonts#UsePlace:use/Collection:Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic'
+        rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" media="screen" href="{{asset('front-assets/js/bootstrap/bootstrap.min.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('front-assets/js/mainmenu/menu.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('front-assets/css/default.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('front-assets/css/layouts.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('front-assets/css/shortcodes.css')}}" type="text/css" />
+    <link rel="stylesheet" media="screen" href="{{asset('front-assets/js/bootstrap/bootstrap.min.css')}}"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{asset('front-assets/js/mainmenu/menu.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{asset('front-assets/css/default.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{asset('front-assets/css/layouts.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{asset('front-assets/css/shortcodes.css')}}" type="text/css"/>
     <link rel="stylesheet" href="{{asset('front-assets/css/font-awesome/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" media="screen" href="{{asset('front-assets/css/responsive-leyouts.css')}}" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="{{asset('front-assets/css/Simple-Line-Icons-Webfont/simple-line-icons.css')}}" media="screen" />
+    <link rel="stylesheet" media="screen" href="{{asset('front-assets/css/responsive-leyouts.css')}}" type="text/css"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{asset('front-assets/css/Simple-Line-Icons-Webfont/simple-line-icons.css')}}" media="screen"/>
     <link rel="stylesheet" href="{{asset('front-assets/css/et-line-font/et-line-font.css')}}">
     <link href="{{asset('front-assets/js/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('front-assets/js/jFlickrFeed/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('front-assets/js/jFlickrFeed/style.css')}}"/>
     <style>
-        a.previous-link, a.next-link{
+        a.previous-link, a.next-link {
             text-decoration: none;
             display: inline-block;
             padding: 8px 16px;
         }
-        span.next-link-disabled, span.previous-link-disabled{
+
+        span.next-link-disabled, span.previous-link-disabled {
             text-decoration: none;
             display: inline-block;
             padding: 8px 16px;
             background: #f1f1f1;
             color: lightgray;
         }
-        a.previous-link, a.next-link{
+
+        a.previous-link, a.next-link {
             background: #dbdc33;
             color: white;
         }
-        a.previous-link:hover, a.next-link:hover{
+
+        a.previous-link:hover, a.next-link:hover {
             background: #c3c418;
             color: white;
         }
@@ -53,25 +64,78 @@
     @yield('styles')
 </head>
 <body>
+
+@php
+    $site_phone = getSiteOption("site_phone");
+    $site_email = getSiteOption("site_email");
+    $site_fb_link = getSiteOption("site_social_links.facebook");
+    $site_twitter_link = getSiteOption("site_social_links.twitter");
+    $site_insta_link = getSiteOption("site_social_links.instagram");
+    $site_linkedin_link = getSiteOption("site_social_links.linkedin");
+    $site_logo = getSiteLogo();
+    $site_name = getSiteOption("site_name");
+    $site_des = getSiteOption("site_description");
+    $copyright_text = getSiteOption("copyright_text");
+@endphp
+
 <div class="site_wrapper">
     <div class="topbar white topbar-padding">
         <div class="container">
             <div class="topbar-left-items">
                 <ul class="toplist toppadding pull-left paddtop1">
-                    <li class="rightl"><i class="fa fa-phone"></i> 1234 - 5678 - 9012</li>
-                    <li><i class="fa fa-envelope"></i> yourmail@domain.com</li>
+                    @if($site_phone)
+                        <li class="rightl">
+                            <i class="fa fa-phone"></i>
+                            {{$site_phone}}
+                        </li>
+                    @endif
+                    @if($site_email)
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            {{$site_email}}
+                        </li>
+                    @endif
                 </ul>
             </div>
             <!--end left-->
 
             <div class="topbar-right-items pull-right">
                 <ul class="toplist toppadding">
-                    <li class="lineright"><a href="#">Login</a></li>
-                    <li class="lineright"><a href="#">Register</a></li>
-                    <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="last"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="lineright">
+                        @if(auth()->guest())
+                            <a href="/login">Login</a>
+                        @else
+                            <a href="/backpanel">{{auth()->user()->name}}</a>
+                        @endif
+                    </li>
+                    @if(!empty($site_fb_link))
+                        <li>
+                            <a href="{{$site_fb_link}}">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                    @endif
+                    @if(!empty($site_twitter_link))
+                        <li>
+                            <a href="{{$site_twitter_link}}">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                    @endif
+                    @if(!empty($site_insta_link))
+                        <li>
+                            <a href="{{$site_insta_link}}">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    @endif
+                    @if(!empty($site_linkedin_link))
+                        <li class="last">
+                            <a href="{{$site_linkedin_link}}">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    @endif
                 </ul>
             </div>
         </div>
@@ -82,23 +146,33 @@
         <div class="container">
             <div class="navbar yellow-green navbar-default yamm">
                 <div class="navbar-header">
-                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    <a href="index.html" class="navbar-brand">
-                        <img src="{{asset('front-assets/images/logo.png')}}" alt=""/>
-                    </a> </div>
+                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"
+                            class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                            class="icon-bar"></span></button>
+                    <a href="/" class="navbar-brand">
+                        @if($site_logo)
+                            <img
+                                src="{{$site_logo}}"
+                                alt="{{$site_name}}"
+                                width="75px"
+                            />
+                        @else
+                            <h3>{{$site_name}}</h3>
+                        @endif
+                    </a></div>
                 <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                     <ul class="nav yellow-green navbar-nav">
-                        <li> <a href="index.html" class="dropdown-toggle active">Home</a></li>
-                        <li> <a href="about.html" class="dropdown-toggle">About Me</a></li>
-                        <li class="dropdown"> <a href="fullwidth-post.html" class="dropdown-toggle">Posts</a>
+                        <li><a href="/" class="dropdown-toggle active">Home</a></li>
+                        <li><a href="about.html" class="dropdown-toggle">About Me</a></li>
+                        <li class="dropdown"><a href="fullwidth-post.html" class="dropdown-toggle">Posts</a>
                             <ul class="dropdown-menu five" role="menu">
-                                <li> <a href="gallerypost.html">Gallery Post</a> </li>
-                                <li> <a href="fullwidth-post.html">Full Width Post</a> </li>
-                                <li> <a href="video-post.html">Video Post</a> </li>
-                                <li> <a class="active" href="index.html">Post with Sidebar</a></li>
+                                <li><a href="gallerypost.html">Gallery Post</a></li>
+                                <li><a href="fullwidth-post.html">Full Width Post</a></li>
+                                <li><a href="video-post.html">Video Post</a></li>
+                                <li><a class="active" href="index.html">Post with Sidebar</a></li>
                             </ul>
                         </li>
-                        <li> <a href="contact.html" class="dropdown-toggle">Contact Me</a></li>
+                        <li><a href="contact.html" class="dropdown-toggle">Contact Me</a></li>
                     </ul>
                 </div>
             </div>
@@ -117,10 +191,10 @@
                 <!--end left item-->
 
                 <!-- sidebar here -->
-                @include('layouts.sidebar')
+            @include('layouts.sidebar')
 
 
-                <!--end left item-->
+            <!--end left item-->
 
             </div>
         </div>
@@ -131,10 +205,23 @@
     <section class="section-dark sec-padding">
         <div class="container ">
             <div class="row">
-                <div class="col-md-2"> <br/>
-                    <img src="{{asset('front-assets/images/flogo.png')}}" alt=""/> </div>
+                <div class="col-md-2"><br/>
+                    @if($site_logo)
+                        <img
+                            src="{{$site_logo}}"
+                            alt="{{$site_name}}"
+                            width="75px"
+                        />
+                    @else
+                        <h3>{{$site_name}}</h3>
+                    @endif
+                </div>
                 <div class="col-md-10">
-                    <blockquote class="style1"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci.</span></blockquote>
+                    <blockquote class="style1">
+                        <span>
+                            {{$site_des}}
+                        </span>
+                    </blockquote>
                 </div>
             </div>
         </div>
@@ -145,10 +232,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span>Copyright © 2020
-                        <a href="#">The Test Coder</a>
-                        By <a href="#">Youtube</a>
-                        |All rights reserved.
+                    <span>
+                        {!! $copyright_text !!}
                     </span>
                 </div>
             </div>

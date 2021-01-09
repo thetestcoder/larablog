@@ -1,17 +1,54 @@
+@php
+    $bio = getSiteOption("site_owner_bio");
+    $site_owner_avatar = getSiteOwnerAvatar();
+    $site_owner_fb_link = getSiteOption("site_owner_social_links.facebook");
+    $site_owner_twitter_link = getSiteOption("site_owner_social_links.twitter");
+    $site_owner_instagram_link = getSiteOption("site_owner_social_links.instagram");
+    $site_owner_linkedin_link = getSiteOption("site_owner_social_links.linkedin");
+@endphp
+
 <div class="col-md-4">
     <div class="col-md-12 nopadding">
         <div class="blog1-sidebar-box">
-            <div class="image-holder"><img src="http://placehold.it/360x340" alt="" class="img-responsive"/></div>
+            <div class="image-holder">
+                @if($site_owner_avatar)
+                    <img src="{{$site_owner_avatar}}" alt="" class="img-responsive"/>
+                @endif
+            </div>
             <div class="text-box-inner">
                 <h5 class="uppercase dosis">About me</h5>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. </p>
+                <p>{{$bio}}</p>
                 <br/>
                 <div class="clearfix"></div>
                 <ul class="blog1-social-icons">
-                    <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    @if(!empty($site_owner_fb_link))
+                        <li>
+                            <a href="{{$site_owner_fb_link}}">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                    @endif
+                    @if(!empty($site_owner_twitter_link))
+                        <li>
+                            <a href="{{$site_owner_twitter_link}}">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                    @endif
+                    @if(!empty($site_owner_instagram_link))
+                        <li>
+                            <a href="{{$site_owner_instagram_link}}">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    @endif
+                    @if(!empty($site_owner_linkedin_link))
+                        <li>
+                            <a href="{{$site_owner_linkedin_link}}">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    @endif
                 </ul>
             </div>
         </div>
@@ -97,12 +134,12 @@
                 <div class="clearfix"></div>
                 <ul class="tags">
                     @forelse($sidebarTags as $sidebarTag)
-                    <li>
-                        <a
-                            href="{{route('tag-post', [$sidebarTag->slug])}}"
-                        >
-                            {{$sidebarTag->name}}</a>
-                    </li>
+                        <li>
+                            <a
+                                href="{{route('tag-post', [$sidebarTag->slug])}}"
+                            >
+                                {{$sidebarTag->name}}</a>
+                        </li>
                     @empty
                     @endforelse
                 </ul>
