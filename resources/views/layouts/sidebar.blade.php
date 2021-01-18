@@ -60,8 +60,18 @@
             <div class="text-box-inner">
                 <h5 class="uppercase dosis">Search</h5>
                 <div class="clearfix"></div>
-                <input class="blog1-sidebar-serch_input" type="search" placeholder="Email Address">
-                <input name="" value="Submit" class="blog1-sidebar-serch-submit" type="submit">
+                <form action="/">
+                    <input
+                        class="blog1-sidebar-serch_input"
+                        type="search"
+                        placeholder="Search"
+                        name="q"
+                    >
+                    <input
+                        value="Submit"
+                        class="blog1-sidebar-serch-submit"
+                        type="submit">
+                </form>
             </div>
         </div>
     </div>

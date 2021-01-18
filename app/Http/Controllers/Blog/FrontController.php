@@ -11,9 +11,19 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
-    public function allPost()
+    public function allPost(Request $request)
     {
-        $posts = Post::where('status', 'publish')->latest()->paginate(2);
+        $postQ = Post::query();
+
+        if ($request->has("q")) {
+            $postQ->where("title", "LIKE", "%$request->q%")
+                ->orWhere("content", "LIKE", "%$request->q%");
+        }
+
+        $posts = $postQ->where('status', 'publish')
+            ->latest()
+            ->paginate(2);
+
         return view('blog.home', compact('posts'));
     }
 

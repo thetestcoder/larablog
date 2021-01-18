@@ -28,12 +28,13 @@
                     <p>{{$post->excerpt}}</p>
                     <br/>
                     <br/>
-                    <a href="{{route('single-post', [$post->slug])}}" class="btn btn-border yellow-green">Read more</a> </div>
+                    <a href="{{route('single-post', [$post->slug])}}" class="btn btn-border yellow-green">Read more</a>
+                </div>
             </div>
         </div>
         <!--end post-->
     @empty
         <p>No Post Found</p>
     @endforelse
-    {{$posts->links('partials.paginator')}}
+    {{$posts->appends(['q'=>Request::get('q')])->links('partials.paginator')}}
 @endsection

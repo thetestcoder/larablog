@@ -27,8 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8df111c-782f-4c36-853b-cbd220966a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/FrontController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -326,7 +326,13 @@
       <workItem from="1609993354501" duration="1250000" />
       <workItem from="1610072869052" duration="17000" />
       <workItem from="1610156850769" duration="98000" />
-      <workItem from="1610156986752" duration="2663000" />
+      <workItem from="1610156986752" duration="2897000" />
+      <workItem from="1610346894063" duration="819000" />
+      <workItem from="1610356623949" duration="477000" />
+      <workItem from="1610371907383" duration="39000" />
+      <workItem from="1610371985546" duration="390000" />
+      <workItem from="1610627308401" duration="31000" />
+      <workItem from="1610938276268" duration="1115000" />
     </task>
     <servers />
   </component>
