@@ -1,0 +1,1 @@
+@extends('backpanel.layouts.master')
